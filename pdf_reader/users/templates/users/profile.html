@@ -1,0 +1,17 @@
+{% extends "users/base.html" %}
+{% block content %}
+<section id="profile">
+    <div class="user">
+        <div class="row">
+            <img src="{{user.profile.image.url}}">
+            <div class="info">
+                <h2>{{user.username}} </h2>
+                <p class="text-muted">{{user.email}}</p>
+            </div>
+        </div>
+        <p id="change"><a class="btn btn-secondary btn-sm mt-1 mr-3"
+                href="{% url 'update-user-image' user.profile.id %}">Update Image</a><a class="btn btn-secondary btn-sm mt-1" href="{% url 'update-user' user.id %}">Update Profile</a></p>
+    </div>
+
+</section>
+{% endblock content %}
