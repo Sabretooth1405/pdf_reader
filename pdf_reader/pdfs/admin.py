@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import File,Text
 
-# Register your models here.
+admin.site.register(File)
+admin.site.register(Text)

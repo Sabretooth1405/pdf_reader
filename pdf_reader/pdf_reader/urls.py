@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
 from users import views as users_views
+from pdfs import views as pdfs_views
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
@@ -27,6 +28,7 @@ urlpatterns = [
     path("login/", users_views.login, name="login"),
     path("logout/", users_views.logout, name="logout"),
     path("profile/", users_views.profile, name="profile"),
+    path("upload/",pdfs_views.file_upload_view,name="upload"),
     path("user/update-user/<int:pk>",
          users_views.UpdateUserProfile.as_view(), name="update-user"),
     path("user/update-image/<int:pk>",
