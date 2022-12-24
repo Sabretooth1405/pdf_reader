@@ -1,0 +1,19 @@
+{% extends "users/base.html" %}
+{% block content %}
+
+
+<section id="posts">
+
+<div class="card">
+    <div class="card-header bg-dark">
+        Text
+    </div>
+    <div class="card-body">
+        <h5 class="card-title"><a href="{{ text.file_associated.document.url }}">{{text.file_name}}</a></h5>
+        <p class="card-text">{{ text.text|linebreaks }} </p>
+        
+    </div>
+</div>
+</section>
+
+{% endblock content %} 

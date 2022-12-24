@@ -1,0 +1,20 @@
+{% extends "users/base.html" %}
+{% block content %}
+<section id="posts">
+{%for text in texts%}
+<div class="card">
+    <div class="card-header bg-dark">
+        Text
+    </div>
+    <div class="card-body">
+        <h5 class="card-title"><a href="{{ text.file_associated.document.url }}">{{text.file_name}}</a></h5>
+        <p class="card-text">{{ text.text|truncatechars:280}}... </p>
+        <small><a href="{% url 'text-detail' text.id %}">Read More</a></small>
+    </div>
+</div>
+{% endfor %}
+</section>
+
+
+
+{% endblock content %} 

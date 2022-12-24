@@ -35,6 +35,8 @@ urlpatterns = [
          users_views.UpdateProfileImg.as_view(), name="update-user-image"),
     path('users/delete/<int:pk>',
          users_views.UserDeleteView.as_view(), name='user-delete'),
+    path('list', pdfs_views.TextListView.as_view(), name='text-list'),
+    path("detail/<int:pk>", pdfs_views.TextDetailView.as_view(), name="text-detail"),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
