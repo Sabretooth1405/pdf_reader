@@ -21,7 +21,6 @@ from pdfs import views as pdfs_views
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
-    path("admin/", admin.site.urls),
     path('', users_views.about, name="about"),
     path('admin/', admin.site.urls),
     path("register/", users_views.register, name="register"),

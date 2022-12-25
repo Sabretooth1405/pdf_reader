@@ -137,4 +137,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+# you will have to change in your system
 PDF_ROOT='/Users/ankitsharma/Desktop/intern_test/pdf_reader/pdf_reader/media/'
