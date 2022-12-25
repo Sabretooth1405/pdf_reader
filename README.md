@@ -1,7 +1,7 @@
 # pdf_reader
 
 ![Alt text](/schema.png?raw=true "Database Schema")
-
+[Video Description](https://drive.google.com/file/d/1N68omw8ApfFGBofrtjqcfRknG48TmsSp/view?usp=sharing)
 
 # Description
 - Supports pdfs and images(ideally png)
