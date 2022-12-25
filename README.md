@@ -24,7 +24,16 @@
  ```
  python manage.py makemigrations
  python manage.py migrate
+ python manage.py runserver
  ```
 
 # Demo
 - [Video Description](https://drive.google.com/file/d/1N68omw8ApfFGBofrtjqcfRknG48TmsSp/view?usp=sharing)
+# Report
+- My approach was to divide project in 3 parts
+  - Create user app for authentication
+  - Create pdfs app to handle file upload
+  - After upload do text extraction
+   - This was the most challenging part as I didn't know much about OCR.I searched online and after testing found the pytessarct module to be most appropriate
+  - I also had to learn about postgressql as I had worked with mysql before that
+  - I learnt about image recognition and OCR 
